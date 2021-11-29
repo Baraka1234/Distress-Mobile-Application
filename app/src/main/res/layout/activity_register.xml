@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="470dp"
+        android:layout_height="80dp"
+        android:text="Please fill in the details"
+        android:textSize="24dp"
+        />
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="470dp"
+        android:layout_height="80dp"
+        android:hint="Enter Your Name"
+        android:textSize="24dp"
+        android:layout_below="@+id/text_title"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/user_number"
+        android:layout_width="470dp"
+        android:layout_height="80dp"
+        android:hint="Enter Your Number"
+        android:textSize="24dp"
+        android:layout_below="@+id/user_name"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/emergency_name"
+        android:layout_width="470dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/user_number"
+        android:hint="Enter Your Emergency Contact's Name"
+        android:inputType="textPersonName"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/emergency_number"
+        android:layout_width="470dp"
+        android:layout_height="80dp"
+        android:hint="Enter Your Emergency contact's Number"
+        android:inputType="number"
+        android:textSize="24dp"
+        android:layout_below ="@id/emergency_name"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emergency_number"
+        android:layout_marginTop="30dp"
+        android:text="Save the information"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Delete Existing information"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btnSave"/>
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="View Existing information"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btnDelete"/>
+
+
+
+</RelativeLayout>

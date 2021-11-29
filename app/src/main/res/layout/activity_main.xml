@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/regEmNumber"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_marginTop="16dp"
+        android:text="Register Emergency Number"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="73dp" />
+
+    <Button
+        android:id="@+id/sendCoord"
+        android:layout_width="match_parent"
+        android:layout_height="283dp"
+        android:background="@drawable/custom_button"
+        android:text="Send Coordinates" />
+
+
+
+    <Button
+        android:id="@+id/stopRec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Recording"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <Button
+        android:id="@+id/recListen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Audio Recordings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/stopPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Playing Audio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startBackGroundProcessButtonClick"
+        android:text="Exit" />
+
+
+</LinearLayout>
